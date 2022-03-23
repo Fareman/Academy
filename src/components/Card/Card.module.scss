@@ -1,0 +1,75 @@
+@import url(../../fonts/stylesheet.scss);
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+  img {
+    position: relative;
+    top: 20px;
+
+    height: 383px;
+  }
+  .info {
+    width: 761px;
+    height: 383px;
+    background: #ffffff;
+    border-radius: 2px;
+
+    .hat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-family: "Factor A";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #585cc6;
+
+        margin: 40px 0 20px 40px;
+      }
+      span {
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #8a8a8a;
+
+        margin: 40px 40px 20px 0;
+      }
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      li {
+        margin-right: 40px;
+        img {
+          position: relative;
+          top: 2px;
+
+          width: 13px;
+          height: 17px;
+        }
+      }
+    }
+    .about {
+      margin: 0 40px 20px 40px;
+    }
+    .pet {
+      margin: 0 0 0 40px;
+      img {
+        position: relative;
+        top: 5px;
+
+        height: 21px;
+        width: 32px;
+        margin-right: 12px;
+      }
+    }
+  }
+}

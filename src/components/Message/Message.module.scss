@@ -1,0 +1,52 @@
+@import url(../../fonts/stylesheet.scss);
+
+.message {
+  width: 471px;
+  height: 231px;
+
+  margin-right: 24px;
+  padding: 24px;
+
+  background: #f5f5f5;
+  border-radius: 2px;
+
+  span {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .messageHat {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+
+    img {
+      width: 52px;
+      height: 52px;
+    }
+    span {
+      margin-left: 20px;
+
+      font-family: "Factor A";
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.0124em;
+      color: #333333;
+    }
+    p {
+      margin-left: auto;
+      position: relative;
+      bottom: 16px;
+
+      font-family: "Factor A";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #8a8a8a;
+    }
+  }
+}

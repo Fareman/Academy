@@ -1,0 +1,73 @@
+@import url(../../fonts/stylesheet.scss);
+
+.form {
+  width: 628px;
+  height: 381px;
+  padding: 24px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0;
+    padding-bottom: 20px;
+
+    font-family: "Factor A";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  label {
+    padding-bottom: 12px;
+
+    font-family: "Factor A";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  input::placeholder {
+    display: flex;
+    align-items: start;
+
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8a8a8a;
+  }
+
+  .firstQ {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    .username {
+      width: 395px;
+      height: 52px;
+      padding: 0;
+    }
+  }
+
+  .description {
+    width: 628px;
+    height: 105px;
+    margin-bottom: 40px;
+  }
+
+  .formBottom {
+    display: flex;
+    align-items: center;
+    button {
+      margin-right: 20px;
+    }
+    img {
+      margin-right: 11px;
+    }
+  }
+}

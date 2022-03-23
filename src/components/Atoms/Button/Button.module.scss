@@ -1,0 +1,57 @@
+@import url(../../../fonts/stylesheet.scss);
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 17px 28px;
+
+  border-radius: 2px;
+  border: none;
+  background: #585cc6;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  &:hover {
+    background: linear-gradient(to right, #696dc8 60%, #585cc6 40%);
+  }
+  &:disabled {
+    background: #8a8a8a;
+  }
+  &:active {
+    background: #797ddf;
+  }
+
+  .add {
+    height: 18px;
+    position: relative;
+    right: 5px;
+  }
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+
+  &:hover {
+    color: #585cc6;
+  }
+
+  &:disabled {
+    color: #adadad;
+    background: #e0e0e0;
+  }
+}
