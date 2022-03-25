@@ -1,44 +1,45 @@
 import React from "react"
+import Text from "../Atoms/Text"
 
 import Styles from "./Card.module.scss"
 
 function Card() {
   return (
     <div className={Styles.card}>
-      <img src="/assets/images/1.svg" alt="MyPhoto" />
+      <img src="/assets/images/1.jpg" alt="MyPhoto" className={Styles.photo} />
       <div className={Styles.info}>
         <div className={Styles.hat}>
-          <h2>Харин Михаил</h2>
-          <span>09.10.1999</span>
+          <Text type="h3">Харин Михаил</Text>
+          <Text type="line">09.10.1999</Text>
         </div>
         <ul>
           <li>
-            <b>Город: </b>
-            <span>Томск</span>
+            <Text type="b">Город: </Text>
+            <Text type="line">Томск</Text>
           </li>
           <li>
-            <b>Пол: </b>
-            <span>
+            <Text type="b">Пол: </Text>
+            <Text type="line">
               мужчина <img src="/assets/icons/male.svg" alt="Male" />
-            </span>
+            </Text>
           </li>
           <li>
-            <b>Возраст: </b>
-            <span>22</span>
+            <Text type="b">Возраст: </Text>
+            <Text type="line">22</Text>
           </li>
         </ul>
         <div className={Styles.about}>
-          <b>О себе: </b>
-          <span>
+          <Text type="b">О себе: </Text>
+          <Text type="line">
             Всем привет! Меня зовут Миша, мне 22 года, я студент. Учусь на программиста уже пятый
             год и подумал пора бы и поработать по специальности) По гороскопу весы, люблю закаты и
             знойных женщин :*
-          </span>
+          </Text>
         </div>
         <div className={Styles.pet}>
           <img src="/assets/icons/pet_food.svg" alt="Food" />
-          <b>Домашнее животное: </b>
-          <span>есть</span>
+          <Text type="b">Домашнее животное: </Text>
+          <Text type="line">есть</Text>
         </div>
       </div>
     </div>

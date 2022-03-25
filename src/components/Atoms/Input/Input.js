@@ -2,17 +2,23 @@ import React from "react"
 
 import Styles from "./Input.module.scss"
 
-const Input = ({placeholder, type, label, text, disabled, error, ...props}) => {
-  return (
-    <div className={Styles.inputBlock}>
-      {label ? <label className={Styles.label}>{text}</label> : ""}
-      <input
-        placeholder={placeholder}
-        className={error ? `${Styles.input} ${Styles.error}` : Styles.input}
-        {...props}
-      />
-    </div>
-  )
+function Input(props) {
+  switch (props.type) {
+    case "input":
+      return (
+        <div className={Styles.inputBlock}>
+          {props.label ? <label className={Styles.label}>{props.text}</label> : ""}
+          <input className={Styles.input} placeholder={props.placeholder} />
+        </div>
+      )
+    case "textArea":
+      return (
+        <div className={Styles.textAreaBlock}>
+          {props.label ? <label className={Styles.label}>{props.text}</label> : ""}
+          <textarea className={Styles.textArea} placeholder={props.placeholder} />
+        </div>
+      )
+  }
 }
 
 export default Input

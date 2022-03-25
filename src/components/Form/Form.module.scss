@@ -1,60 +1,43 @@
 @import url(../../fonts/stylesheet.scss);
 
 .form {
-  width: 628px;
-  height: 381px;
-  padding: 24px;
-  background: #ffffff;
+  max-width: 633px;
+  max-height: 395px;
 
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+
+  padding: 24px;
+  background: #ffffff;
 
   h3 {
     margin: 0;
     padding-bottom: 20px;
 
-    font-family: "Factor A";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  label {
-    padding-bottom: 12px;
-
-    font-family: "Factor A";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  input::placeholder {
-    display: flex;
-    align-items: start;
-
-    font-family: "Gilroy";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #8a8a8a;
+    color: #333333;
   }
 
   .firstQ {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
 
-    .username {
+    input {
       width: 395px;
       height: 52px;
-      padding: 0;
+      margin-right: 16px;
+      margin-bottom: 32px;
+    }
+    button {
+      width: 217px;
+      height: 52px;
+      position: relative;
+      top: 1px;
     }
   }
 
-  .description {
+  textarea {
     width: 628px;
     height: 105px;
     margin-bottom: 40px;
@@ -64,10 +47,67 @@
     display: flex;
     align-items: center;
     button {
+      height: 52px;
+      width: 203px;
       margin-right: 20px;
     }
     img {
       margin-right: 11px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .form {
+    max-width: 256px;
+    max-height: 431px;
+    padding: 16px;
+
+    h3 {
+      margin: 0;
+      padding-bottom: 20px;
+
+      font-family: "Factor A";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .firstQ {
+      flex-direction: column;
+      align-items: start;
+
+      input {
+        width: 256px;
+        height: 42px;
+        margin-right: 0px;
+        margin-bottom: 12px;
+      }
+
+      button {
+        width: 149px;
+        height: 42px;
+        position: relative;
+        top: 0px;
+        margin-bottom: 24px;
+      }
+    }
+
+    textarea {
+      width: 256px;
+      height: 105px;
+      margin-bottom: 32px;
+    }
+
+    .formBottom {
+      flex-direction: column-reverse;
+      align-items: center;
+      button {
+        width: 100%;
+        height: 42px;
+        margin-right: 0;
+      }
     }
   }
 }

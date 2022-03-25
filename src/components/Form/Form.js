@@ -2,31 +2,36 @@ import React from "react"
 
 import Styles from "./Form.module.scss"
 
+import Info from "../Atoms/Info"
+import Text from "../Atoms/Text"
 import Input from "../Atoms/Input"
 import Button from "../Atoms/Button/Button"
 
 export default function Form() {
   return (
     <form className={Styles.form}>
-      <h3>Отзыв</h3>
-      <label htmlFor="1">Как вас зовут?</label>
+      <Text type="h3">Отзыв</Text>
 
       <div className={Styles.firstQ}>
-        <input className={Styles.username} id="1" Placeholder="Имя Фамилия" />
-        <Button add>Загрузить фото</Button>
+        <Input type="input" label text="Как вас зовут?" placeholder="Имя Фамилия" />
+        <Button add>
+          <Text type="button">Загрузить фото</Text>
+        </Button>
       </div>
 
-      <label htmlFor="2">Все ли вам понравилось?</label>
-      <input
-        className={Styles.description}
-        id="2"
-        Placeholder="Напишите пару слов о вашем опыте..."
+      <Input
+        type="textArea"
+        label
+        text="Все ли вам понравилось?"
+        placeholder="Напишите пару слов о вашем опыте..."
       />
 
       <div className={Styles.formBottom}>
-        <Button>Отправить отзыв</Button>
-        <img src="assets/icons/info.svg" />
-        <p>Все отзывы проходят модерацию в течение 2 часов</p>
+        <Button>
+          <Text type="button">Отправить отзыв</Text>
+        </Button>
+
+        <Info />
       </div>
     </form>
   )

@@ -2,15 +2,18 @@ import Header from "../Header"
 import Card from "../Card"
 import Review from "../ReviewBlock"
 import Footer from "../Footer"
+import Text from "../Atoms/Text"
 
 function App() {
   return (
-    <div className="wrapper">
+    <div>
       <Header />
-      <img className="spline" src="/assets/icons/spline.svg" />
-      <h1>Добро пожаловать в академию!</h1>
-      <Card />
-      <Review />
+      <div className="main">
+        <img className="spline" src="/assets/icons/spline.svg" />
+        <Text type="h1">Добро пожаловать в академию!</Text>
+        <Card />
+        <Review />
+      </div>
       <Footer />
     </div>
   )

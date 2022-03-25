@@ -3,8 +3,6 @@ import React from "react"
 import Styles from "./Modal.module.scss"
 
 export default function Modal({active, setActive, children}) {
-  //const [active, setActive] = useState(active)
-
   return (
     <div
       className={active ? `${Styles.modal} ${Styles.active}` : Styles.modal}

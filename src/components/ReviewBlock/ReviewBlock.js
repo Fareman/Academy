@@ -3,10 +3,10 @@ import React, {useState} from "react"
 import Styles from "./ReviewBlock.module.scss"
 
 import Slider from "../Slider/Slider"
-import Message from "../Message/Message"
 import Modal from "../Modal/Modal"
 import Form from "../Form/Form"
 import Button from "../Atoms/Button/Button"
+import Text from "../Atoms/Text"
 
 const arr = [
   {
@@ -49,7 +49,7 @@ function ReviewBlock() {
     <div className={Styles.review}>
       <div className={Styles.comments}>
         <div className={Styles.commentsHat}>
-          <span>Отзывы</span>
+          <Text type="h2">Отзывы</Text>
           <Button add onClick={() => setModalActive(true)}>
             Добавить отзыв
           </Button>
@@ -59,10 +59,10 @@ function ReviewBlock() {
       </div>
 
       <div className={Styles.arrows}>
-        <button className={Styles.left} onClick={Slider.navigation.prevEl}>
+        <button className={Styles.left + " swiper-button-prev"}>
           <img src="/assets/icons/arrow.svg" alt="LeftArrow" />
         </button>
-        <button className={Styles.right} onClick={Slider.navigation.nextEl}>
+        <button className={Styles.right + " swiper-button-next"}>
           <img src="/assets/icons/arrow.svg" alt="RightArrow" />
         </button>
       </div>

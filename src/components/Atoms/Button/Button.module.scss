@@ -5,8 +5,6 @@
   align-items: center;
   justify-content: center;
 
-  padding: 17px 28px;
-
   border-radius: 2px;
   border: none;
   background: #585cc6;
@@ -35,23 +33,15 @@
   }
 }
 
-.arrow {
-  width: 24px;
-  height: 24px;
-  padding: 16px;
+@media (max-width: 350px) {
+  .btn {
+    font-size: 14px;
+    line-height: 18px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 2px;
-
-  &:hover {
-    color: #585cc6;
-  }
-
-  &:disabled {
-    color: #adadad;
-    background: #e0e0e0;
+    .add {
+      height: 10px;
+      position: relative;
+      right: 5px;
+    }
   }
 }

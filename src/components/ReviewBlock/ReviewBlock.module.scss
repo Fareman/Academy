@@ -5,66 +5,77 @@
   align-items: flex-end;
 
   .comments {
-    width: 1062px;
-    height: 399;
+    max-width: 1062px;
+    max-height: 405px;
+
+    padding: 56px 56px 32px 80px;
     margin-right: 34px;
-    padding: 74px 56px 40px 80px;
 
     background: #ffffff;
     border-radius: 2px;
     .commentsHat {
       display: flex;
+      align-items: center;
       justify-content: space-between;
 
-      span {
-        font-family: "Factor A";
-        font-weight: 500;
-        font-size: 68px;
-        line-height: 88px;
-        letter-spacing: -0.0124em;
-        color: #333333;
-      }
       button {
         width: 220px;
         height: 52px;
-
-        background: #585cc6;
-        border-radius: 2px;
-
-        font-family: "Gilroy";
-        font-weight: 600;
-        font-size: 18px;
-        letter-spacing: 0.01em;
-        line-height: 18px;
-        color: #ffffff;
       }
     }
   }
   .arrows {
+    width: 128px;
     display: flex;
+    justify-content: space-between;
+    z-index: 0;
 
     .left,
     .right {
       width: 52px;
       height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+      position: relative;
+      left: 0;
+
       border: none;
       border-radius: 2px;
-
-      &:hover {
-        color: #585cc6;
-      }
-
-      &:disabled {
-        color: #adadad;
-        background: #e0e0e0;
-      }
     }
     .left {
-      margin-right: 16px;
       transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .review {
+    .comments {
+      max-height: 435px;
+      max-width: 272px;
+
+      margin-right: 0px;
+      padding: 20px 15px 24px 17px;
+
+      .commentsHat {
+        align-items: start;
+        h2 {
+          margin-bottom: 21px;
+        }
+        button {
+          width: 42px;
+          height: 42px;
+          img {
+            position: relative;
+            left: 1px;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+    .arrows {
+      display: none;
     }
   }
 }
