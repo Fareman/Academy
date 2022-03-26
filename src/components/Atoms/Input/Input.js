@@ -8,14 +8,46 @@ function Input(props) {
       return (
         <div className={Styles.inputBlock}>
           {props.label ? <label className={Styles.label}>{props.text}</label> : ""}
-          <input className={Styles.input} placeholder={props.placeholder} />
+          <input
+            onChange={props.onChange}
+            onBlur={props.onBlur}
+            value={props.value}
+            name={props.name}
+            className={Styles.input}
+            placeholder={props.placeholder}
+          />
+
+          {props.error ? (
+            <div className={Styles.errorBlock}>
+              <img src="/assets/icons/cross.svg" />
+              <label className={Styles.error}>{props.errorText}</label>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       )
     case "textArea":
       return (
         <div className={Styles.textAreaBlock}>
           {props.label ? <label className={Styles.label}>{props.text}</label> : ""}
-          <textarea className={Styles.textArea} placeholder={props.placeholder} />
+          <textarea
+            onChange={props.onChange}
+            onBlur={props.onBlur}
+            value={props.value}
+            name={props.name}
+            className={Styles.textArea}
+            placeholder={props.placeholder}
+            maxLength={200}
+          />
+          {props.error ? (
+            <div className={Styles.errorBlock}>
+              <img src="/assets/icons/cross.svg" />
+              <label className={Styles.error}>{props.errorText}</label>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       )
   }

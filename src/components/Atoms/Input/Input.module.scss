@@ -20,6 +20,9 @@
       line-height: 22px;
       color: #8a8a8a;
     }
+    &:invalid {
+      border: 1px solid #eb5757;
+    }
   }
   .label {
     margin-bottom: 14px;
@@ -31,6 +34,21 @@
     line-height: 20px;
     letter-spacing: -0.0124em;
     color: #333333;
+  }
+}
+
+.errorBlock {
+  display: flex;
+  img {
+    padding-right: 2px;
+  }
+  .error {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #eb5757;
   }
 }
 

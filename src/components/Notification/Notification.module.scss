@@ -1,0 +1,19 @@
+@import url(../../fonts/stylesheet.scss);
+
+.notifWrapper {
+  width: 438px;
+
+  position: fixed;
+  bottom: 104px;
+  right: 40px;
+}
+
+@media (max-width: 350) {
+  .notifWrapper {
+    width: 288px;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+}
