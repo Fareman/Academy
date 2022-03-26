@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2bdd8485.css",
+    "main.js": "/static/js/main.69dce5b9.js",
+    "static/media/Gilroy-Medium.eot": "/static/media/Gilroy-Medium.2fea647f59b209f411b1.eot",
+    "static/media/Gilroy-Medium.ttf": "/static/media/Gilroy-Medium.1c23f810e531d0702f76.ttf",
+    "static/media/Gilroy-Regular.eot": "/static/media/Gilroy-Regular.19055ba082a9f78262f6.eot",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "static/media/Gilroy-Bold.eot": "/static/media/Gilroy-Bold.aa68c169bc1dc3db278e.eot",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/Gilroy-Semibold.ttf": "/static/media/Gilroy-Semibold.6780292641f883b3dad3.ttf",
+    "static/media/FactorA-Regular.eot": "/static/media/FactorA-Regular.d7084f57c279a0a27572.eot",
+    "static/media/FactorAMedium-Regular.eot": "/static/media/FactorAMedium-Regular.8bcfa461c1032eea4547.eot",
+    "static/media/FactorA-Regular.ttf": "/static/media/FactorA-Regular.144a180e589c9ab6e7bf.ttf",
+    "static/media/FactorAMedium-Regular.ttf": "/static/media/FactorAMedium-Regular.1a1b89bd931afe1bfa27.ttf",
+    "static/media/FactorA-Bold.eot": "/static/media/FactorA-Bold.efbfdf23f587000903f7.eot",
+    "static/media/FactorA-Bold.ttf": "/static/media/FactorA-Bold.f8635ab95fce0b26ef5d.ttf",
+    "static/media/Gilroy-Medium.woff": "/static/media/Gilroy-Medium.5329bc502cdc219ad294.woff",
+    "static/media/Gilroy-Bold.woff": "/static/media/Gilroy-Bold.0607a1bc636f63251ed8.woff",
+    "static/media/Gilroy-Regular.woff": "/static/media/Gilroy-Regular.ebe86c0337572553acea.woff",
+    "static/media/FactorA-Regular.woff": "/static/media/FactorA-Regular.0b48626533dbf8291095.woff",
+    "static/media/FactorAMedium-Regular.woff": "/static/media/FactorAMedium-Regular.dcdc0b4f86e3cce5850c.woff",
+    "static/media/FactorA-Bold.woff": "/static/media/FactorA-Bold.3603310c3c972c5ada0f.woff",
+    "static/media/FactorA-Regular.woff2": "/static/media/FactorA-Regular.f5b2e09c6ad335835b9c.woff2",
+    "static/media/FactorAMedium-Regular.woff2": "/static/media/FactorAMedium-Regular.63d92a6f39ed77bacf07.woff2",
+    "static/media/FactorA-Bold.woff2": "/static/media/FactorA-Bold.321597e7e8401629d48d.woff2",
+    "static/media/spline.svg": "/static/media/spline.36d19b0d5ce39746ea8a.svg",
+    "static/media/profile.svg": "/static/media/profile.db0114c00382e2622492.svg",
+    "index.html": "/index.html",
+    "main.2bdd8485.css.map": "/static/css/main.2bdd8485.css.map",
+    "main.69dce5b9.js.map": "/static/js/main.69dce5b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bdd8485.css",
+    "static/js/main.69dce5b9.js"
+  ]
+}

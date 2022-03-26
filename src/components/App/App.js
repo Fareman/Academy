@@ -3,8 +3,6 @@ import Card from "../Card"
 import Review from "../ReviewBlock"
 import Footer from "../Footer"
 import Text from "../Atoms/Text"
-import Notification from "../Notification/Notification"
-import Form from "../Form/Form"
 
 function App() {
   return (
